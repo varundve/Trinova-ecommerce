@@ -220,20 +220,20 @@ export default function LoginPage() {
         </div>
         <div className="relative z-10 flex items-center justify-center p-12">
           <div className="text-primary-foreground max-w-md text-center">
-            <h2 className="text-4xl font-bold mb-6">Transform Innovation Into Impact</h2>
+            <h2 className="text-4xl font-bold mb-6">Transforming Innovation Into Impact</h2>
             <p className="text-lg text-primary-foreground/80 mb-8">
               Access cutting-edge IoT products, exclusive deals, and industry-leading support when you sign in.
             </p>
             <div className="flex justify-center gap-8">
-              <div>
-                <p className="text-3xl font-bold">500+</p>
-                <p className="text-sm text-primary-foreground/70">Happy Clients</p>
+             {/* <div>
+                <p className="text-3xl font-bold"></p>
+                <p className="text-sm text-primary-foreground/70"></p>
               </div>
               <div>
-                <p className="text-3xl font-bold">1000+</p>
-                <p className="text-sm text-primary-foreground/70">Products</p>
-              </div>
-              <div>
+                <p className="text-3xl font-bold"></p>
+                <p className="text-sm text-primary-foreground/70"></p>
+              </div>*/}
+              <div> 
                 <p className="text-3xl font-bold">24/7</p>
                 <p className="text-sm text-primary-foreground/70">Support</p>
               </div>

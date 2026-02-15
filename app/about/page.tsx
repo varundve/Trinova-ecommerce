@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { AboutSection } from "@/components/about-section";
 
+      
 export default function AboutPage() {
     return (
     <>
