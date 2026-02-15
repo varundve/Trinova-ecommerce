@@ -85,11 +85,12 @@ export function ProductsSection() {
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 {/* Image */}
-                <div className="relative aspect-square overflow-hidden bg-muted cursor-pointer" onClick={() => window.location.href = `/products/${product.id}`}>
+                <div className="relative w-full h-64 overflow-hidden bg-muted cursor-pointer" onClick={() => window.location.href = `/products/${product.id}`}>
                   <Image
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
 
@@ -104,7 +105,7 @@ export function ProductsSection() {
                     {product.onSale && (
                       <Badge variant="destructive">
                         <Tag className="w-3 h-3 mr-1" />
-                        Sale
+                        Coming Soon
                       </Badge>
                     )}
                   </div>

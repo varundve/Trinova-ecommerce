@@ -16,10 +16,10 @@ const categories = [
   },
   {
     id: "safety",
-    name: "Safety Equipment",
-    description: "Fire alarms, gas detectors, and protective gear",
+    name: "Safety Products",
+    description: "SafeGuard+, NovaGuard",
     icon: Shield,
-    image: "/images/safety-equipment-industrial.jpg",
+    image: "/images/safeg.png",
     count: 2,
     color: "from-emerald-500 to-teal-500",
   },

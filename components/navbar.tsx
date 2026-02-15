@@ -83,7 +83,7 @@ export function Navbar() {
       >
         <div className="gradient-primary text-primary-foreground py-2 px-4">
           <div className="max-w-7xl mx-auto flex items-center justify-between text-sm">
-            <p className="hidden sm:block">Free shipping on orders over ₹50,000</p>
+            <p className="hidden sm:block">Free shipping on orders over ₹10,000</p>
             <div className="flex items-center gap-4">
               <Link href="/admin" className="hover:underline">
                 Admin Panel
@@ -195,7 +195,7 @@ export function Navbar() {
               )}
 
               {/* Cart */}
-              <Button variant="ghost" size="icon" className="relative" onClick={() => setIsCartOpen(true)}>
+              <Button variant="default" size="icon" className="relative" onClick={() => setIsCartOpen(true)}>
                 <ShoppingCart className="w-5 h-5" />
                 {cartCount > 0 && (
                   <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center animate-scale-in">

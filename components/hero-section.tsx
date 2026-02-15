@@ -6,11 +6,11 @@ import Image from "next/image"
 import { ArrowRight, Shield, Truck, Headphones, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const stats = [
-  { value: "0+", label: "Happy Clients" },
-  { value: "0+", label: "Products Sold" },
-  { value: "0+", label: "Years Experience" },
-]
+//const stats = [
+//  { value: "", label: "" },
+//  { value: "", label: "" },
+ // { value: "", label: "" },
+//]
 
 const features = [
   { icon: Shield, label: "Quality Assured" },
@@ -45,11 +45,11 @@ export function HeroSection() {
           <div className={mounted ? "animate-fade-in-up" : "opacity-0"}>
             <div className="inline-flex items-center gap-2 bg-primary/20 text-primary-foreground px-4 py-2 rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-success rounded-full animate-pulse" />
-              Trusted by 0+ Companies
+              IoT Solutions for Safety
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-              Transform Innovation
+              Transforming Innovation
               <span className="block text-gradient">Into Impact</span>
             </h1>
 
@@ -77,16 +77,16 @@ export function HeroSection() {
 
             {/* Stats */}
             <div className="flex gap-8 md:gap-12">
-              {stats.map((stat, index) => (
+              {/*stats.map((stat, index) => (
                 <div
                   key={stat.label}
-                  className={`${mounted ? "animate-fade-in-up" : "opacity-0"}`}
+                  //className={`${mounted ? "animate-fade-in-up" : "opacity-0"}`}
                   style={{ animationDelay: `${300 + index * 100}ms` }}
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-gradient">{stat.value}</div>
-                  <div className="text-sm text-primary-foreground/70">{stat.label}</div>
+                  <div className="text-3xl md:text-4xl font-bold text-gradient">{}</div>
+                  <div className="text-sm text-primary-foreground/70">{}</div>
                 </div>
-              ))}
+              ))*/}
             </div>
           </div>
 
@@ -96,7 +96,7 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-linear-to-br from-primary/30 to-accent/30 rounded-3xl blur-2xl" />
               <div className="relative bg-linear-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-primary/20 shadow-2xl">
                 <Image
-                  src="/images/herosection.jpg"
+                  src="/images/logo.jpg"
                   alt="Trinova Innovation Products"
                   width={500}
                   height={500}
@@ -111,7 +111,7 @@ export function HeroSection() {
                     <Shield className="w-5 h-5 text-success" />
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">ISO Certified</p>
+                    <p className="font-semibold text-sm">Tested Products</p>
                     <p className="text-xs text-muted-foreground">Quality Assured</p>
                   </div>
                 </div>
