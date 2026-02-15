@@ -35,7 +35,7 @@ export function getSampleProducts(): Product[] {
       id: "prod_2",
       name: "NovaGuard",
       category: "safety",
-      price: 7999,
+      price: 999,
       stock: 5,
       description:
       "NovaGuard is an all-in-one smart security stick delivering signaling, illumination, non-lethal defense, laser guidance, and long-lasting power backup.",
