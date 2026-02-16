@@ -91,7 +91,7 @@ export function ProductsSection() {
                     alt={product.name}
                     fill
                     sizes="(max-width: 768px) 100vw, 25vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="aspect-square  group-hover:scale-105 transition-transform duration-500"
                   />
 
                   {/* Badges */}
@@ -125,7 +125,7 @@ export function ProductsSection() {
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-warning text-warning" />
                     ))}
-                    <span className="text-xs text-muted-foreground ml-1">(24)</span>
+                    <span className="text-xs text-muted-foreground ml-1">(1)</span>
                   </div>
 
                   <span className="text-xs font-medium text-primary uppercase tracking-wide">{product.category}</span>

@@ -71,8 +71,8 @@ export function AboutSection() {
               ))}
             </ul>
 
-            <Button size="lg" className="shadow-lg shadow-primary/25">
-              Learn More About Us
+            <Button  size="lg"  className="shadow-lg shadow-primary/25 cursor-pointer">
+              <a href="#achievements" >Learn More About Us</a>
             </Button>
           </div>
         </div>

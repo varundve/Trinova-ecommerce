@@ -63,7 +63,7 @@ export function CategoriesSection() {
           {categories.map((category, index) => (
             <a
               key={category.id}
-              href={`#products?category=${category.id}`}
+              href={`products?category=${category.id}`}
               className="group relative overflow-hidden rounded-2xl bg-background border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
               onMouseEnter={() => setHoveredId(category.id)}
