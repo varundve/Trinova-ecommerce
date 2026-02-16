@@ -56,8 +56,8 @@ export default function ProductDetailPage() {
   const [ratingStats, setRatingStats] = useState({ average: 0, count: 0 })
   const [showReviewForm, setShowReviewForm] = useState(false)
   const [reviewRating, setReviewRating] = useState(5)
-  const [reviewTitle, setReviewTitle] = useState("")
-  const [reviewComment, setReviewComment] = useState("")
+  const [reviewTitle, setReviewTitle] = useState("aspect-4/3 ")
+  const [reviewComment, setReviewComment] = useState("aspect-4/3 ")
   const [reviewImages, setReviewImages] = useState<string[]>([])
   const [submittingReview, setSubmittingReview] = useState(false)
 
@@ -142,8 +142,8 @@ export default function ProductDetailPage() {
     setRatingStats(getAverageRating(product.id, "product"))
     setShowReviewForm(false)
     setReviewRating(5)
-    setReviewTitle("")
-    setReviewComment("")
+    setReviewTitle("aspect-4/3 ")
+    setReviewComment("aspect-4/3 ")
     setReviewImages([])
     setSubmittingReview(false)
   }
@@ -240,13 +240,13 @@ export default function ProductDetailPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Images */}
             <div className="space-y-4">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-muted border">
+              <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-muted border">
              
                 <Image
                   src={product.image || "/placeholder.svg"}
                   alt={product.name}
                   fill
-                  className="object-cover"
+                  className="aspect-4/3 rounded-2xl overflow-hidden"
                   priority
                 />
                 {product.onSale && (
@@ -271,7 +271,7 @@ export default function ProductDetailPage() {
                       src={product.image || "/placeholder.svg"}
                       alt={`${product.name} view ${i + 1}`}
                       fill
-                      className="object-cover"
+                      className="aspect-4/3 rounded-lg "
                     />
                   </button>
                 ))}
@@ -349,7 +349,7 @@ export default function ProductDetailPage() {
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button
                   size="lg"
-                  className={`flex-1 gap-2 ${addedToCart ? "bg-green-500 hover:bg-green-600" : ""}`}
+                  className={`flex-1 gap-2 ${addedToCart ? "bg-green-500 hover:bg-green-600" : "aspect-4/3 "}`}
                   onClick={handleAddToCart}
                 >
                   {addedToCart ? (
@@ -370,7 +370,7 @@ export default function ProductDetailPage() {
                   className="gap-2"
                   onClick={handleAddToWishlist}
                 >
-                  <Heart className={`w-5 h-5 ${inWishlist ? "fill-current" : ""}`} />
+                  <Heart className={`w-5 h-5 ${inWishlist ? "fill-current" : "aspect-4/3 "}`} />
                   {inWishlist ? "In Wishlist" : "Add to Wishlist"}
                 </Button>
                 <Button size="lg" variant="outline" className="gap-2 bg-transparent">
@@ -576,7 +576,7 @@ export default function ProductDetailPage() {
                           <div className="flex flex-wrap gap-3">
                             {reviewImages.map((img, index) => (
                               <div key={index} className="relative w-20 h-20 rounded-lg overflow-hidden border">
-                                <Image src={img || "/placeholder.svg"} alt={`Review image ${index + 1}`} fill className="object-cover" />
+                                <Image src={img || "/placeholder.svg"} alt={`Review image ${index + 1}`} fill className="aspect-4/3 " />
                                 <button
                                   type="button"
                                   onClick={() => removeImage(index)}
@@ -644,7 +644,7 @@ export default function ProductDetailPage() {
                                 {review.userName
                                   .split(" ")
                                   .map((n) => n[0])
-                                  .join("")
+                                  .join("aspect-4/3 ")
                                   .toUpperCase()}
                               </span>
                             </div>
@@ -681,7 +681,7 @@ export default function ProductDetailPage() {
                           <div className="flex gap-2 mb-3">
                             {review.images.map((img, index) => (
                               <div key={index} className="relative w-16 h-16 rounded-lg overflow-hidden border">
-                                <Image src={img || "/placeholder.svg"} alt={`Review image ${index + 1}`} fill className="object-cover" />
+                                <Image src={img || "/placeholder.svg"} alt={`Review image ${index + 1}`} fill className="aspect-4/3 " />
                               </div>
                             ))}
                           </div>
@@ -715,12 +715,12 @@ export default function ProductDetailPage() {
                     href={`/products/${relProduct.id}`}
                     className="group bg-background rounded-xl border overflow-hidden hover:shadow-lg transition-all"
                   >
-                    <div className="relative aspect-square overflow-hidden">
+                    <div className="relative aspect-4/3 overflow-hidden">
                       <Image
                         src={relProduct.image || "/placeholder.svg"}
                         alt={relProduct.name}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        className=" group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                     <div className="p-4">

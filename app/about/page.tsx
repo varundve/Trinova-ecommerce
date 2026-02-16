@@ -2,6 +2,7 @@
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { AboutSection } from "@/components/about-section";
+import { TestimonialsSection } from "@/components/testimonials-section";
 
       
 export default function AboutPage() {
@@ -10,6 +11,7 @@ export default function AboutPage() {
     <Navbar />
     <div className="mt-20">
     <AboutSection />
+    <TestimonialsSection />
     </div>
     <Footer/>
     </>
