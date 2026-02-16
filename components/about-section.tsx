@@ -1,21 +1,21 @@
 "use client"
 
 import Image from "next/image"
-import { Check, Award, Users, Globe, Headphones } from "lucide-react"
+import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const highlights = [
-  { icon: Award, label: "Development Programme cum MSME EXPO 2026", value: "Programme" },
-  { icon: Users, label: "MSME Development & Facilitation Office, Government of India", value: "Authority" },
-  { icon: Globe, label: "Understanding MSME policies & support schemes", value: "Exposure" },
-  { icon: Headphones, label: "Interaction with MSME officials & entrepreneurs", value: "Networking" },
+  { icon: "🔬", label: "We build what others haven't imagined yet.", value: "Innovation" },
+  { icon: "💡", label: "Every product must make life better.", value: "Purpose" },
+  { icon: "🛡️", label: "Dependable technology you can trust anytime.", value: "Reliability" },
+  { icon: "♻️", label: "Innovation that respects the future.", value: "Sustainability" },
 ]
 
 const features = [
-  "Participated in MSME EXPO 2026",
-  "Organized by Ministry of MSME, Govt. of India",
-  "Focus on MSME development & innovation",
-  "Networking with industry professionals",
+  "The Story Behind TRINOVA",
+  "Trinetra — Divine Protection Inspired by the third eye of Lord Shiva",
+  "Nova — A Star Reborn Symbol of brilliance, rebirth & new possibilities",
+  "Power in Your Hand.Smart.Safe.Unstoppable.",
 ]
 
 export function AboutSection() {
@@ -26,7 +26,7 @@ export function AboutSection() {
           {/* Image */}
           <div className="relative">
             <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/images/certi.jpeg" alt="Trinova Innovation Facility" fill className="object-cover" />
+              <Image src="/images/about.jpeg" alt="Trinova Innovation Facility" fill className="object-cover" />
             </div>
 
             {/* Stats card */}
@@ -50,10 +50,10 @@ export function AboutSection() {
           <div>
           
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
-              MSME Development Programme & EXPO 2026 Participation
+              Building the Future Protecting the Present.
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-             Trinova Innovation LLP proudly participated in the Development Programme cum MSME EXPO 2026 organized by the MSME Development & Facilitation Office, Kanpur.
+            We are a purpose-driven innovation company transforming big ideas into life-changing solutions. At Trinova Innovation LLP, we combine creativity, intelligent engineering, and user-centered design to build technology that truly matters — technology that empowers, protects, and inspires people every day.
             </p>
 
             <ul className="space-y-4 mb-8">
@@ -86,7 +86,7 @@ export function AboutSection() {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <item.icon className="w-7 h-7 text-primary" />
+                <span className="text-2xl">{item.icon}</span>
               </div>
               <p className="text-3xl font-bold text-foreground mb-1">{item.value}</p>
               <p className="text-muted-foreground text-sm">{item.label}</p>
