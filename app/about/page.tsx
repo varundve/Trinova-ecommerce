@@ -9,7 +9,7 @@ export default function AboutPage() {
     return (
     <>
     <Navbar />
-    <div className="mt-20">
+     <div className="pt-104px">
     <AboutSection />
     <TestimonialsSection />
     </div>
