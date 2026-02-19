@@ -48,10 +48,10 @@ export function TestimonialsSection() {
             Our Achievements
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">
-            Milestones That Define Us
+            Company Achivement and Events
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-            A decade of innovation, quality, and trust in the industrial IoT space.
+           A passionate team committed to change
           </p>
         </div>
 
